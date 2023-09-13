@@ -1,3 +1,5 @@
+$main-color:#1EACC7
+$second-color:#FF5656
 * 
 	font-family: "Roboto", sans-serif 
 nav 
@@ -67,7 +69,7 @@ nav
 		width: 172px 
 		height: 46px 
 		border-radius: 4px 
-		background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%) 
+		background: linear-gradient(0deg, $main-color 0%, #4ce2ff 100%) 
 		box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset 
 		margin-top: 21px 
 .promo 
@@ -103,7 +105,7 @@ nav
 		width: 259px 
 		height: 63px 
 		border-radius: 4px 
-		background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%) 
+		background: linear-gradient(0deg, $main-color 0%, #4ce2ff 100%) 
 		box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset 
 		border: none 
 		color: #fff 
@@ -127,6 +129,9 @@ nav
 	padding: 5px 12px 
 	background: #000 
 	text-align: center
+	&_white
+		color: #070716
+		background: #FFF
 .title 
 	color: #222 
 	text-align: center 
@@ -134,7 +139,9 @@ nav
 	font-style: normal 
 	font-weight: 700 
 	text-transform: uppercase 
-	margin-top: 33px 
+	margin-top: 27px 
+	&_white
+		color:#FFF
 .advantages_block 
 	padding: 20px 0px 67px 0px 
 	.advantages_item 
@@ -148,14 +155,14 @@ nav
 	.advantages_round 
 		width: 116px 
 		height: 116px 
-		background: #1eacc7 
+		background: $main-color
 		border-radius: 100% 
 		display: flex 
 		justify-content: center 
 		align-items: center 
 		margin-right: 25px 
 	.advantages_subtitle 
-		color: #1EACC7 
+		color: $main-color
 		font-size: 17px 
 		font-style: normal 
 		font-weight: 400 
@@ -170,8 +177,11 @@ nav
 	font-size: 17px
 	font-style: normal
 	font-weight: 400
-	margin-top: 19px
+	margin-top: 1px
 	text-align: center
+	&_white
+		color: #FFF
+
 .mobile
 	min-height: 861px
 	padding: 48px 0 79px 0
@@ -218,7 +228,30 @@ nav
 			background: #000000
 			border-radius:100%
 			bottom: 35px
-			cursor: pointer			
+			cursor: pointer	
+.choice
+	position: relative
+	min-height: 895px
+	padding-bottom: 138px	
+	background: url("../img/background/mobile_bg.png") center center/cover no-repeat
+	.black
+		position: absolute
+		background: #070716
+		width: 100%
+		height: 502px
+		top:0
+		left:0
+		padding-top:59px
+	&_img
+		position: relative
+		display: block
+		margin: 54px auto 0 auto
+	&_desc
+		text-align: center
+		font-size: 17px
+		font-style: normal
+		font-weight: 300
+		color: #222
 
 			
 
